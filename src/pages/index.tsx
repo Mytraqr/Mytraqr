@@ -19,8 +19,8 @@ export default function Home() {
             <span className="text-2xl font-bold text-green-600">MyTraqr</span>
           </div>
           <div className="space-x-4">
-            <Link href="/auth" className="px-4 py-2 rounded hover:bg-gray-100">Log In</Link>
-            <Link href="/auth?isSignUp=true" className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Sign Up</Link>
+            <a href="/auth" className="px-4 py-2 rounded hover:bg-gray-100">Log In</a>
+            <a href="/auth?isSignUp=true" className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Sign Up</a>
           </div>
         </div>
       </nav>
@@ -78,7 +78,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Elevate Your Golf Game?</h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto">Join thousands of golfers who are using MyTraqr to track, analyze, and improve their performance.</p>
-          <Link href="/auth?isSignUp=true" className="px-8 py-3 bg-white text-green-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">Get Started for Free</Link>
+          <a href="/auth?isSignUp=true" className="px-8 py-3 bg-white text-green-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">Get Started for Free</a>
         </div>
       </section>
 
@@ -93,8 +93,8 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><Link href="/" className="text-gray-400 hover:text-white">Home</Link></li>
-                <li><Link href="/auth" className="text-gray-400 hover:text-white">Login</Link></li>
+                <li><a href="/" className="text-gray-400 hover:text-white">Home</a></li>
+                <li><a href="/auth" className="text-gray-400 hover:text-white">Login</a></li>
               </ul>
             </div>
             <div>

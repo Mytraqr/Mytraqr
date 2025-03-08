@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-function Error({ statusCode }) {
+function Error({ statusCode }: { statusCode?: number }) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full text-center">
@@ -19,7 +19,7 @@ function Error({ statusCode }) {
   )
 }
 
-Error.getInitialProps = ({ res, err }) => {
+Error.getInitialProps = ({ res, err }: { res?: { statusCode?: number }, err?: { statusCode?: number } }) => {
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404
   return { statusCode }
 }
