@@ -1,0 +1,21 @@
+<!-- Add this script to the head section -->
+<script>
+  // Check if the URL has a path other than root
+  if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+    // Store the intended path
+    sessionStorage.setItem('redirectPath', window.location.pathname + window.location.search);
+    // Redirect to the root
+    window.location.href = '/';
+  }
+  
+  // On page load, check if there's a stored path to redirect to
+  window.addEventListener('DOMContentLoaded', function() {
+    const redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath) {
+      sessionStorage.removeItem('redirectPath');
+      // Handle the redirect in your app
+      console.log('Redirecting to:', redirectPath);
+      // You would typically have your SPA router handle this path
+    }
+  });
+</script> 

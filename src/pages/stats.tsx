@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '@/lib/supabase'
-import { Round } from '@/types'
+import { Round, HoleData, Shot } from '@/types'
 import { calculateStats, StatsData } from '@/utils/stats'
 import { getUserStats, updateUserStats } from '@/services/statsService'
 import {
@@ -45,9 +45,9 @@ export default function StatsPage() {
         // Calculate score history
         const history = roundsData.map(round => ({
           date: round.date,
-          score: round.holes.reduce((total, hole) => 
+          score: round.holes.reduce((total: number, hole: HoleData) => 
             total + hole.shots.length + 
-            hole.shots.reduce((acc, shot) => acc + (shot.penalty?.strokes || 0), 0)
+            hole.shots.reduce((acc: number, shot: Shot) => acc + (shot.penalty?.strokes || 0), 0)
           , 0)
         }))
         setScoreHistory(history)
