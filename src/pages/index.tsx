@@ -34,8 +34,8 @@ export default function Home() {
           <h1 className="text-5xl font-bold mb-6">Track Your Golf Game Like Never Before</h1>
           <p className="text-xl mb-10 max-w-3xl mx-auto">MyTraqr helps you track every shot, analyze your performance, and improve your golf game with detailed statistics and insights.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/auth?role=player&isSignUp=true" className="px-8 py-3 bg-green-600 text-white rounded-lg text-lg font-semibold hover:bg-green-700 transition">I'm a Player</Link>
-            <Link href="/auth?role=coach&isSignUp=true" className="px-8 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition">I'm a Coach</Link>
+            <a href="/auth?role=player&isSignUp=true" className="px-8 py-3 bg-green-600 text-white rounded-lg text-lg font-semibold hover:bg-green-700 transition">I'm a Player</a>
+            <a href="/auth?role=coach&isSignUp=true" className="px-8 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition">I'm a Coach</a>
           </div>
         </div>
       </section>
