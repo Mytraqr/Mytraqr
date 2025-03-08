@@ -38,9 +38,9 @@ export default function AuthPage() {
         
         router.push('/dashboard')
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error:', error)
-      alert(error.message)
+      alert(error.message || 'An error occurred during authentication')
     }
   }
 
