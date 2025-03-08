@@ -19,8 +19,8 @@ export default function Home() {
             <span className="text-2xl font-bold text-green-600">MyTraqr</span>
           </div>
           <div className="space-x-4">
-            <a href="/auth" className="px-4 py-2 rounded hover:bg-gray-100">Log In</a>
-            <a href="/auth?isSignUp=true" className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Sign Up</a>
+            <a href="/signin" className="px-4 py-2 rounded hover:bg-gray-100">Log In</a>
+            <a href="/signup" className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Sign Up</a>
           </div>
         </div>
       </nav>
@@ -34,8 +34,8 @@ export default function Home() {
           <h1 className="text-5xl font-bold mb-6">Track Your Golf Game Like Never Before</h1>
           <p className="text-xl mb-10 max-w-3xl mx-auto">MyTraqr helps you track every shot, analyze your performance, and improve your golf game with detailed statistics and insights.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="/auth?role=player&isSignUp=true" className="px-8 py-3 bg-green-600 text-white rounded-lg text-lg font-semibold hover:bg-green-700 transition">I'm a Player</a>
-            <a href="/auth?role=coach&isSignUp=true" className="px-8 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition">I'm a Coach</a>
+            <a href="/signup?role=player" className="px-8 py-3 bg-green-600 text-white rounded-lg text-lg font-semibold hover:bg-green-700 transition">I'm a Player</a>
+            <a href="/signup?role=coach" className="px-8 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition">I'm a Coach</a>
           </div>
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Elevate Your Golf Game?</h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto">Join thousands of golfers who are using MyTraqr to track, analyze, and improve their performance.</p>
-          <a href="/auth?isSignUp=true" className="px-8 py-3 bg-white text-green-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">Get Started for Free</a>
+          <a href="/signup" className="px-8 py-3 bg-white text-green-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">Get Started for Free</a>
         </div>
       </section>
 
@@ -94,7 +94,7 @@ export default function Home() {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li><a href="/" className="text-gray-400 hover:text-white">Home</a></li>
-                <li><a href="/auth" className="text-gray-400 hover:text-white">Login</a></li>
+                <li><a href="/signin" className="text-gray-400 hover:text-white">Login</a></li>
               </ul>
             </div>
             <div>
